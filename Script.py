@@ -1,12 +1,6 @@
 class script(object):
-    START_TXT = """<b>Hey {}
-I'm Cinemica Bot.
-Here you can search Movies & Web Series in inline mode.
-Just press following buttons and start searching.
-➖➖➖➖➖➖➖➖➖➖➖
-😎 You Can Also Use Me As A Auto-filter in Your Group ....
-Its Easy To Use Me; Just Add Me To Your Group As Admin, That's All, I will Provide Movies There...😎
-©️Maintained By  @cinemica</b>"""
+    START_TXT = """<b>Hᴇʟʟᴏ {},
+Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Eɴᴊᴏʏ 😍</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
