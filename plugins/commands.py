@@ -46,16 +46,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('ADD ME TO YOUR GROUP', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
-                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('CHANNEL', url=CHNL_LNK"),
+                    InlineKeyboardButton('GROUP', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
-                    InlineKeyboardButton('Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ ☌', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('HELP', callback_data='help'),
+                    InlineKeyboardButton('INLINE SEARCH', switch_inline_query_current_chat='')
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('SUBSCRIBE MY YT CHANNEL', url='https://www.youtube.com/channel/UC2_U9WYQaopjXGZ7n9HbN3Q')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
